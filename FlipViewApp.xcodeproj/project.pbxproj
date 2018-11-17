@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C00327D521A03A8800FF9811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00327D421A03A8800FF9811 /* AppDelegate.swift */; };
-		C00327D721A03A8800FF9811 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00327D621A03A8800FF9811 /* ViewController.swift */; };
+		C00327D721A03A8800FF9811 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00327D621A03A8800FF9811 /* SwipingController.swift */; };
 		C00327DA21A03A8800FF9811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00327D821A03A8800FF9811 /* Main.storyboard */; };
 		C00327DD21A03A8800FF9811 /* FlipViewApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C00327DB21A03A8800FF9811 /* FlipViewApp.xcdatamodeld */; };
 		C00327DF21A03A8A00FF9811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C00327DE21A03A8A00FF9811 /* Assets.xcassets */; };
 		C00327E221A03A8A00FF9811 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C00327E021A03A8A00FF9811 /* LaunchScreen.storyboard */; };
 		C00327ED21A03A8A00FF9811 /* FlipViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00327EC21A03A8A00FF9811 /* FlipViewAppTests.swift */; };
 		C00327F821A03A8A00FF9811 /* FlipViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00327F721A03A8A00FF9811 /* FlipViewAppUITests.swift */; };
+		C003280621A0467000FF9811 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003280521A0467000FF9811 /* PageCell.swift */; };
+		C003280821A070B400FF9811 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003280721A070B300FF9811 /* Pages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* Begin PBXFileReference section */
 		C00327D121A03A8800FF9811 /* FlipViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00327D421A03A8800FF9811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C00327D621A03A8800FF9811 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C00327D621A03A8800FF9811 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		C00327D921A03A8800FF9811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C00327DC21A03A8800FF9811 /* FlipViewApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlipViewApp.xcdatamodel; sourceTree = "<group>"; };
 		C00327DE21A03A8A00FF9811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		C00327F321A03A8A00FF9811 /* FlipViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00327F721A03A8A00FF9811 /* FlipViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipViewAppUITests.swift; sourceTree = "<group>"; };
 		C00327F921A03A8A00FF9811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C003280521A0467000FF9811 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		C003280721A070B300FF9811 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				C00327D421A03A8800FF9811 /* AppDelegate.swift */,
-				C00327D621A03A8800FF9811 /* ViewController.swift */,
+				C00327D621A03A8800FF9811 /* SwipingController.swift */,
+				C003280721A070B300FF9811 /* Pages.swift */,
+				C003280521A0467000FF9811 /* PageCell.swift */,
 				C00327D821A03A8800FF9811 /* Main.storyboard */,
 				C00327DE21A03A8A00FF9811 /* Assets.xcassets */,
 				C00327E021A03A8A00FF9811 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C00327D721A03A8800FF9811 /* ViewController.swift in Sources */,
+				C00327D721A03A8800FF9811 /* SwipingController.swift in Sources */,
 				C00327D521A03A8800FF9811 /* AppDelegate.swift in Sources */,
+				C003280821A070B400FF9811 /* Pages.swift in Sources */,
+				C003280621A0467000FF9811 /* PageCell.swift in Sources */,
 				C00327DD21A03A8800FF9811 /* FlipViewApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
